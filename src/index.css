@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #E9E9E9;
+}
+
+.marko-one-regular {
+    font-family: "Marko One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
