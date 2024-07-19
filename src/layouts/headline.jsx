@@ -15,7 +15,9 @@ const Headline = () => {
       <div className=" flex justify-between mt-8">
         <div>
           {headlineText.map((text, index) => (
-            <Typography key={index}>{text}</Typography>
+            <Typography className="font-marko-one" key={index}>
+              {text}
+            </Typography>
           ))}
         </div>
         {/* <div className="headline_image mx-2">

@@ -2,7 +2,10 @@ import PropTypes from "prop-types";
 import { Typography } from "@material-tailwind/react";
 import { HeartIcon } from "@heroicons/react/24/solid";
 
-export function Footer({ name, link }) {
+export function Footer({
+  name = "DevRoy",
+  link = "https://x.com/roychinwuba",
+}) {
   const year = new Date().getFullYear();
 
   return (
@@ -24,11 +27,6 @@ export function Footer({ name, link }) {
     </footer>
   );
 }
-
-Footer.defaultProps = {
-  name: "DevRoy",
-  link: "https://x.com/roychinwuba",
-};
 
 Footer.propTypes = {
   name: PropTypes.string,

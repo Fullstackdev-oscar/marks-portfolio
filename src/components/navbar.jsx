@@ -41,20 +41,21 @@ const Navbar = () => {
     <div className="flex items-center justify-between">
       <div className="flex logo items-center">
         <span className="">WEB</span>
-        <img src="../../public/Vector 7.png" alt="" className="" />
+        <img src="../../Vector 7.png" alt="" className="" />
         <span>DYNESTY</span>
       </div>
 
-      <div className="flex justify-between gap-4 navbar-routes">
+      <nav className="flex justify-between gap-4 navbar-routes">
         <ul className="flex gap-4 items-center uppercase">
           {navbarRoutes.map((link, index) => (
             <li key={index}>
+              
               <a href={link.path}>{link.name}</a>
             </li>
           ))}
         </ul>
         <Button>Start Now</Button>
-      </div>
+      </nav>
     </div>
   );
 };

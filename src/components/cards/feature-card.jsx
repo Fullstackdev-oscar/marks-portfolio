@@ -1,8 +1,22 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line react/prop-types
-const FeatureCard = ({ title, description, icon, learnMoreLink }) => {
+
+const FeatureCard = ({
+  title,
+  description,
+  icon,
+  learnMoreLink,
+  isThirdCard,
+}) => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 h-full flex flex-col ">
-      <img src={`../../../${icon}`} alt="" width={20} height={20} />
+    <div className="bg-white shadow-md rounded-lg p-6 h-full flex flex-col">
+      <img
+        src={`../../../${icon}`}
+        alt=""
+        width={20}
+        height={20}
+        className={`${isThirdCard ? "bg-purple-400" : ""}`}
+      />
       <h3 className="text-lg font-bold mb-4">{title}</h3>
       <p className="text-gray-600 mb-4 flex-grow">{description}</p>
       <a

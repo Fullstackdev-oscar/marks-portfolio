@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line react/prop-types
 import {
   Card,
   CardHeader,
@@ -26,7 +28,7 @@ function CheckIcon() {
   );
 }
 
-export default function PricingCard() {
+const PricingCard = ({ title, tag, price, features, description }) => {
   return (
     <Card color="gray" variant="gradient" className="w-full max-w-[20rem] p-8">
       <CardHeader
@@ -40,43 +42,61 @@ export default function PricingCard() {
           color="white"
           className="font-normal uppercase"
         >
-          standard
+          {title}
         </Typography>
         <Typography
           variant="h1"
           color="white"
           className="mt-6 flex justify-center gap-1 text-7xl font-normal"
         >
-          <span className="mt-2 text-4xl">$</span>29{" "}
-          <span className="self-end text-4xl">/mo</span>
+          <span className="mt-2 text-4xl">$</span>
+          {price} <span className="self-end text-4xl">/mo</span>
+        </Typography>
+        <Typography variant="small" color="white" className="font-normal ">
+          {tag}
+        </Typography>
+        <Typography variant="small" color="white" className="font-normal  ">
+          {description}
         </Typography>
       </CardHeader>
       <CardBody className="p-0">
         <ul className="flex flex-col gap-4">
-          <li className="flex items-center gap-4">
+          {features.map((service, index) => (
+            <li key={index} className="flex items-center gap-4">
+              <span className="rounded-full border border-white/20 bg-white/20 p-1">
+                <CheckIcon />
+              </span>
+              <Typography className="font-normal">{service}</Typography>
+            </li>
+          ))}
+          {/* <li className="flex items-center gap-4">
             <span className="rounded-full border border-white/20 bg-white/20 p-1">
               <CheckIcon />
             </span>
             <Typography className="font-normal">5 team members</Typography>
           </li>
+
           <li className="flex items-center gap-4">
             <span className="rounded-full border border-white/20 bg-white/20 p-1">
               <CheckIcon />
             </span>
             <Typography className="font-normal">200+ components</Typography>
           </li>
+
           <li className="flex items-center gap-4">
             <span className="rounded-full border border-white/20 bg-white/20 p-1">
               <CheckIcon />
             </span>
             <Typography className="font-normal">40+ built-in pages</Typography>
           </li>
+
           <li className="flex items-center gap-4">
             <span className="rounded-full border border-white/20 bg-white/20 p-1">
               <CheckIcon />
             </span>
             <Typography className="font-normal">1 year free updates</Typography>
           </li>
+
           <li className="flex items-center gap-4">
             <span className="rounded-full border border-white/20 bg-white/20 p-1">
               <CheckIcon />
@@ -84,7 +104,7 @@ export default function PricingCard() {
             <Typography className="font-normal">
               Life time technical support
             </Typography>
-          </li>
+          </li> */}
         </ul>
       </CardBody>
       <CardFooter className="mt-12 p-0">
@@ -95,9 +115,10 @@ export default function PricingCard() {
           ripple={false}
           fullWidth={true}
         >
-          Buy Now
+          Order Now
         </Button>
       </CardFooter>
     </Card>
   );
-}
+};
+export default PricingCard;

@@ -10,7 +10,7 @@ const HeadlineCopy = () => {
   return (
     <div className="text-gray-400 ">
       {supportingCopy.map((text, index) => (
-        <Typography className="" key={index}>
+        <Typography className="font-marko-one" key={index}>
           {text}
         </Typography>
       ))}

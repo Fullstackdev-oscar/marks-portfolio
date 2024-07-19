@@ -1,5 +1,6 @@
 // import { Typography } from "@material-tailwind/react";
 
+import { Typography } from "@material-tailwind/react";
 import { FeatureCard } from "../components";
 
 const Features = () => {
@@ -23,6 +24,7 @@ const Features = () => {
         "Good design is like a refrigerator when it works, no one notices, but when it doesn't, it sure stinks.",
       learnMoreLink: "#",
       icon: "graphics_design_vector.png",
+      isThirdCard: true,
     },
     {
       title: "Mobile App",
@@ -48,10 +50,14 @@ const Features = () => {
   ];
 
   return (
-    <div className="w-full bg-gray-100 py-16">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">Our Features</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <div className="w-full py-16">
+      <div className=" mx-auto">
+        <h2 className="text-3xl font-bold mb-8 ">Features</h2>
+        <div className="flex items-center">
+          <Typography variant="h3">What I do</Typography>
+          <img src="../../sand_clock.png" alt="" />{" "}
+        </div>{" "}
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-4">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
@@ -59,6 +65,7 @@ const Features = () => {
               title={feature.title}
               description={feature.description}
               learnMoreLink={feature.learnMoreLink}
+              isThirdCard={feature.isThirdCard}
             />
           ))}
         </div>
