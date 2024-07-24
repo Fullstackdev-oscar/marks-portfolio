@@ -5,8 +5,18 @@
   /* text-align: center;
 } */
 
-body {
-  /* background-color: #E9E9E9; */
+/* .active {
+  background-color: bisque;
+} */
+
+section {
+  background-color: white;
+  padding: 0 4rem;
+  max-height: max-content;
+}
+
+section:nth-of-type(even) {
+  background-color: whitesmoke;
 }
 
 /* .logo {

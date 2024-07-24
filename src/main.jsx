@@ -6,10 +6,14 @@ import "./index.css";
 // @material-tailwind/react
 import { ThemeProvider } from "@material-tailwind/react";
 
+import { ContextProvider } from "./contexts/ContextProvider";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
+    <ContextProvider>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </ContextProvider>
   </React.StrictMode>
 );

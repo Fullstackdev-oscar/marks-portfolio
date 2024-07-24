@@ -18,15 +18,16 @@ export default function App() {
     <>
       <div className="font-marko-one">
         <Navbar />
-        <Headline />
-        <Features />
-        <Portfolio />
-        <Resume />
-        <Testimonial />
-        <Clients />
-        <Pricing />
-
-        <Contact />
+        <div className="">
+          <Headline />
+          <Features />
+          <Portfolio />
+          <Resume />
+          <Testimonial />
+          <Clients />
+          <Pricing />
+          <Contact />
+        </div>
         {/* <Routes>
         <Route path="#" element={<Headline />} />
         <Route path="*" element={<Navigate to="/" replace />} />

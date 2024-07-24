@@ -50,14 +50,14 @@ const Features = () => {
   ];
 
   return (
-    <div className="w-full py-16">
+    <section className="w-full py-16 text-center" id="features">
       <div className=" mx-auto">
         <h2 className="text-3xl font-bold mb-8 ">Features</h2>
-        <div className="flex items-center">
+        <div className="flex items-center justify-center">
           <Typography variant="h3">What I do</Typography>
           <img src="../../sand_clock.png" alt="" />{" "}
         </div>{" "}
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-4">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-4">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
@@ -70,7 +70,7 @@ const Features = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -8,9 +8,9 @@ const HeadlineCopy = () => {
     "offered, and rates conditions.",
   ];
   return (
-    <div className="text-gray-400 ">
+    <div className="text-gray-400 mt-16 xl:-mt-8">
       {supportingCopy.map((text, index) => (
-        <Typography className="font-marko-one" key={index}>
+        <Typography className="font-inter" key={index}>
           {text}
         </Typography>
       ))}
