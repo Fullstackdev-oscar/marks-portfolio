@@ -9,7 +9,7 @@ export default withMT({
       fontFamily: {
         "marko-one": ["Marko One", "serif"],
         inter: ["Inter", "sans-serif"],
-        "sans-open": ["Open Sans", "serif"],
+        "open-sans": ["Open Sans", "inter", "sans-serif"],
       },
 
       backdropFilter: {
