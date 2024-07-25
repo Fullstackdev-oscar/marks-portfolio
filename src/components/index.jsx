@@ -1,4 +1,5 @@
 export { default as Navbar } from "./navbar";
+export { default as Rating } from "./rating";
 export { default as NavButton } from "./navButton";
 export { default as Footer } from "./footer";
 export { default as ClientCard } from "./cards/client-card";

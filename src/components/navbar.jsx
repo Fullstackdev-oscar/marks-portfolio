@@ -71,9 +71,13 @@ const Navbar = () => {
         id="#"
         href="#"
       >
-        <span className="text-2xl">WEB</span>
+        <span className="text-2xl drop-shadow-[0_0_1px_rgba(0,0,0,0.25)]">
+          CODE
+        </span>
         <img src="../../Vector 7.png" alt="" className="" />
-        <span className="text-2xl">DYNESTY</span>
+        <span className="text-2xl drop-shadow-[0_4_4px_rgba(0,0,0,0.75)]">
+          WEAVERS
+        </span>
       </a>
       {mobileNav && (
         <NavButton title="Menu" color="" icon={<AiOutlineMenu />} />
@@ -91,17 +95,12 @@ const Navbar = () => {
                 onClick={(e) => {
                   handleNavClick(link.name);
                 }}
-                className={`transition duration-300 ease-in-out ${
-                  activeNavLink === link.name
-                    ? "bg-purple-700 text-white p-4 rounded"
-                    : "text-gray-800"
-                }`}
+                className={`transition duration-300 ease-in-out`}
                 style={{
                   borderBottom:
                     activeNavLink === link.name ? " 2px solid black" : "",
                   borderBottomColor:
                     activeNavLink === link.name ? "#700F6C" : "",
-                  borderRadius: "4px",
                 }}
               >
                 {link.name}

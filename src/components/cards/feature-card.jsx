@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line react/prop-types
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const FeatureCard = ({
   title,
@@ -9,7 +10,7 @@ const FeatureCard = ({
   isThirdCard,
 }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 h-full flex flex-col">
+    <div className=" feature-card bg-white shadow-md rounded-lg p-6 h-full flex flex-col font-inter">
       <img
         src={`../../../${icon}`}
         alt=""
@@ -19,11 +20,8 @@ const FeatureCard = ({
       />
       <h3 className="text-lg font-bold mb-4">{title}</h3>
       <p className="text-gray-600 mb-4 flex-grow">{description}</p>
-      <a
-        href={learnMoreLink}
-        className="text-blue-500 hover:text-blue-700 mt-auto"
-      >
-        Learn More
+      <a href={learnMoreLink} className=" card-link hidden hover:scale-100">
+        <FaLongArrowAltRight />
       </a>
     </div>
   );

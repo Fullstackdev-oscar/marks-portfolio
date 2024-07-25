@@ -9,6 +9,10 @@
   background-color: bisque;
 } */
 
+.feature-card:hover>.card-link {
+  display: block;
+}
+
 section {
   padding: 0 4rem;
   max-height: max-content;

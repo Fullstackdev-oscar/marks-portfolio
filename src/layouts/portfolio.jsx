@@ -37,13 +37,13 @@ const Portfolio = () => {
   ];
   return (
     <section id="portfolio" className="pt-16">
-      <h4 className="text-center">Contains previous experience in jobs done</h4>
       <div className="flex items-center justify-center">
-        <Typography className=" font-marko-one" variant="h3">
+        <Typography className=" font-marko-one text-[#700F6C]" variant="h3">
           Portfolio
         </Typography>
         <img src="../../sand_clock.png" alt="" />{" "}
       </div>
+      <h4 className="text-center">Contains previous experience in jobs done</h4>
       <div className="flex items-center"></div>{" "}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-4 font-sans">
         {projects.map((project, idx) => (
