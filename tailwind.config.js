@@ -10,6 +10,7 @@ export default withMT({
         "marko-one": ["Marko One", "serif"],
         inter: ["Inter", "sans-serif"],
         "open-sans": ["Open Sans", "inter", "sans-serif"],
+        ojuju: ["Ojuju", "sans-serif"],
       },
 
       backdropFilter: {
