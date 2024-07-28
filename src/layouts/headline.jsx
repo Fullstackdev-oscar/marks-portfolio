@@ -13,7 +13,7 @@ const Headline = () => {
   ];
 
   return (
-    <section className="mt-4 md:mt-20 xl:text-justify">
+    <section className="mt-4 md:mt-20 xl:text-justify mb-16">
       <div className="  text-center md:text-justify md:flex justify-between ">
         <div className="font-marko-one font-normal text-4xl">
           <h1 className=" mb-6">Hello</h1>

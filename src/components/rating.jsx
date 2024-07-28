@@ -4,12 +4,12 @@ import { RiInstagramFill, RiLinkedinFill } from "react-icons/ri";
 
 const Rating = () => {
   return (
-    <div className=" flex gap-[5.31rem] mt-[3.44rem] mb-4 ">
+    <div className=" flex gap-[5.31rem] mt-[3.44rem]">
       <div className=" ">
         <h2>Work with us</h2>
         <div className="flex gap-2">
           <a href="#">
-            <div className="flex  bg-[#D9D9D9] text-[#C602BE] hover:bg-black  w-8 h-8 cursor-pointer rounded-sm items-center justify-center">
+            <div className="flex  bg-[#D9D9D9] text-blue-800 hover:bg-black  w-8 h-8 cursor-pointer rounded-sm items-center justify-center">
               <FaFacebookF />
             </div>
           </a>
@@ -21,7 +21,7 @@ const Rating = () => {
           </a>
 
           <a href="#">
-            <div className=" flex bg-[#D9D9D9] text-[#C602BE] hover:bg-black w-8 h-8 cursor-pointer rounded-sm items-center justify-center">
+            <div className=" flex bg-[#D9D9D9] text-blue-800 hover:bg-black w-8 h-8 cursor-pointer rounded-sm items-center justify-center">
               <RiLinkedinFill />
             </div>
           </a>

@@ -7,3 +7,6 @@ export { default as FeatureCard } from "./cards/feature-card";
 export { default as PricingCard } from "./cards/pricing-card";
 export { default as ResumeCard } from "./cards/resume-card";
 export { default as TestimonialCard } from "./cards/testimonial-card";
+export { default as BrandCard } from "./cards/brandCard";
+export { default as ClientSwiperSlideComponent } from "./clientSwiper";
+export { default as TestimonialSliderComponent } from "./testimonialSwiper";
