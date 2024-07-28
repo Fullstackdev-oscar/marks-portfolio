@@ -6,3 +6,5 @@ export { default as Testimonial } from "./testimonial";
 export { default as Clients } from "./clients";
 export { default as Pricing } from "./pricing";
 export { default as Contact } from "./contact";
+
+
