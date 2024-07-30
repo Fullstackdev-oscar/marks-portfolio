@@ -52,7 +52,9 @@ const Features = () => {
   return (
     <section className="w-full py-16" id="features">
       <div className=" mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-[#700F6C]">Features</h2>
+        <h2 className="text-3xl font-bold mb-8 text-[#700F6C] text-center">
+          Features
+        </h2>
         <div className="flex items-center justify-center">
           <Typography variant="h3">What I do</Typography>
           <img src="../../sand_clock.png" alt="" />{" "}

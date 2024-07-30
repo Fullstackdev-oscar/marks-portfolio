@@ -1,4 +1,4 @@
-import { ClientSwiperSlideComponent } from "@/components";
+import { ClientSlider } from "@/components";
 import React from "react";
 
 const Clients = () => {
@@ -15,7 +15,7 @@ const Clients = () => {
             them with the highest level of service.
           </p>
         </div>
-        <ClientSwiperSlideComponent />
+        <ClientSlider/>
       </div>
     </section>
   );
