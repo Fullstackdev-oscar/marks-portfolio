@@ -12,7 +12,7 @@ import { TestimonialSlider } from "@/components";
 
 const Testimonial = () => {
   return (
-    <section className=" py-16" id="clients">
+    <section className=" py-16" id="testimonials">
       <div className=" mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-[#700F6C] mb-4">
