@@ -4,7 +4,7 @@ import { RiInstagramFill, RiLinkedinFill } from "react-icons/ri";
 
 const Rating = () => {
   return (
-    <div className=" flex gap-[5.31rem] mt-[3.44rem]">
+    <div className=" flex gap-[5.31rem] mt-8 mb-4 justify-center lg:justify-normal">
       <div className=" ">
         <h2>Work with us</h2>
         <div className="flex gap-2">

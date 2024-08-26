@@ -87,7 +87,7 @@ const Navbar = () => {
           mobileNav ? "hidden" : "flex justify-between gap-4 navbar-routes"
         }  `}
       >
-        <ul className="flex gap-4 items-center uppercase ">
+        <ul className="flex gap-4 items-center capitalize ">
           {navbarRoutes.map((link, index) => (
             <li className="text-sm font-inter" key={index}>
               <a
@@ -110,7 +110,7 @@ const Navbar = () => {
         </ul>
         <a href="#contact">
           <Button
-            className="font-inter rounded-full font-normal"
+            className="font-inter rounded-full font-normal capitalize"
             style={{ backgroundColor: "#C602BE" }}
           >
             Contact Us

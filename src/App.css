@@ -9,9 +9,58 @@
   background-color: bisque;
 } */
 
+
 .feature-card:hover .card-link {
   display: block;
 
+}
+
+.testimonial-section {
+  padding: 0 20px;
+  /* background-color: #f4f4f4; */
+}
+
+.testimonial-card {
+  max-width: 800px;
+  /* margin: 0 auto; */
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.testimonial-content {
+  flex-grow: 1;
+}
+
+.testimonial-content h3 {
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.testimonial-content p {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+}
+
+.testimonial-content .testimonial-author {
+  font-weight: bold;
+}
+
+.testimonial-content .testimonial-company,
+.testimonial-content .testimonial-role {
+  color: #666;
 }
 
 .feature-card:hover[text] {
@@ -23,7 +72,7 @@
 }
 
 section {
-  padding: 0 4rem;
+  padding: 0 8rem;
   max-height: max-content;
 }
 
@@ -83,4 +132,41 @@ section:nth-of-type(even) {
 
 .read-the-docs {
   color: #888;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateY(20px);
+  /* Start 20px below its final position */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  /* Smooth transition */
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+  /* Move to its final position */
+}
+
+@keyframes slides-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Start 20px below its final position */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    /* Smooth transition */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    /* Move to its final position */
+  }
+}
+
+/* */
+@media screen and (max-width: 848px) {
+  section {
+    padding: 1rem;
+  }
 }
