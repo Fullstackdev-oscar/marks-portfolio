@@ -61,9 +61,9 @@ const PricingCard = ({ title, tag, price, features, technology }) => {
         </Typography>
       </CardHeader>
       <CardBody className="p-0">
-        <ul className="grid grid-cols-2  gap-4">
+        <ul className="">
           {features.map((service, index) => (
-            <li key={index} className="flex items-center gap-4">
+            <li key={index} className="flex items-center gap-4 mb-2">
               <span className="rounded-full border border-white/20 bg-white/20 p-1">
                 <CheckIcon />
               </span>

@@ -16,7 +16,7 @@ const TestimonialSlider = () => {
   // ];
   return (
     <>
-      <section className="h-[100%] px-0 md:px-4 py-6">
+      <section className="h-[100%] px-0 md:px-4 py-6 after:origin-bottom ">
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
@@ -26,7 +26,7 @@ const TestimonialSlider = () => {
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 40,
             },
             1024: {
