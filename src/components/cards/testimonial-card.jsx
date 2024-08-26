@@ -11,9 +11,9 @@ import {
 const TestimonialCard = () => {
   return (
     <div>
-      <section class="testimonial-section font-inter">
-        <div class="testimonial-card">
-          <div class="testimonial-content">
+      <section className="testimonial-section font-inter">
+        <div className="testimonial-card">
+          <div className="testimonial-content">
             <h3>Excellent Service and Professionalism</h3>
             <p className=" text-balance">
               "The team at this company has been amazing. They provided
@@ -22,12 +22,12 @@ const TestimonialCard = () => {
             </p>
             <div className="flex items-center justify-center">
               <div>
-                <div class="testimonial-author">Alex Johnson</div>
-                <div class="testimonial-company">ABC Company</div>
-                <div class="testimonial-role">Marketing Manager</div>
+                <div className="testimonial-author">Alex Johnson</div>
+                <div className="testimonial-company">ABC Company</div>
+                <div className="testimonial-role">Marketing Manager</div>
               </div>
               <img
-                src="/public/avatar-1.webp"
+                src="/avatar-1.webp"
                 alt="Testimonial Image"
                 width={80}
                 height={80}
